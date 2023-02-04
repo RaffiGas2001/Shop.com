@@ -1,0 +1,15 @@
+.images{
+    width: 30%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images a{
+    font-size: 30px;
+    font-family: Arial;
+    color: white;
+    text-decoration: none;
+
+}

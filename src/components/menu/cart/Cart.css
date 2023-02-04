@@ -1,0 +1,13 @@
+.bag{
+    width: 10%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bag a{
+    font-size: 30px;
+    text-decoration: none;
+    color: red;
+}

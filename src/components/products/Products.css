@@ -1,0 +1,14 @@
+#products{
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.newProduct{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

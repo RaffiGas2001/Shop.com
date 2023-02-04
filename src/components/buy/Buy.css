@@ -1,0 +1,10 @@
+.buyDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.loader{
+    margin: 0 auto;
+    margin-top: 25%;
+}
