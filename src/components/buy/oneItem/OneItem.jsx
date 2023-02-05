@@ -2,7 +2,7 @@ import { useState } from "react"
 import "./OneItem.css"
 
 
-const OneItem = ({prod, handleRemove, index}) => {
+const OneItem = ({prod, handleRemove, index, quantity, setQuantity, bag, setBag}) => {
     const [ q, setQ ] = useState(1)
     const [ pric, setPric] = useState(prod.price)
     
@@ -16,6 +16,12 @@ const OneItem = ({prod, handleRemove, index}) => {
     function handleIncrement(){
         setQ(q => q + 1)
         setPric(pric+prod.price)
+    }
+
+    function handleBuy(){
+        alert("If you are sure that you are buying this product, click the OK button.      "+q+" - "+prod.title+" - "+"$"+prod.price)
+        setQuantity(quantity-1)
+        setBag(bag.filter((val, ind) => ind !== index))
     }
 
     return (
@@ -33,7 +39,8 @@ const OneItem = ({prod, handleRemove, index}) => {
                         <h4>{q}</h4>
                         <button onClick={handleIncrement}>+</button>
                     </div>
-                    <div className='remove'>
+                    <div className='buy-remove'>
+                        <button onClick={() => handleBuy(index)}>Buy</button>
                         <button onClick={() => handleRemove(index)}>Remove</button>
                     </div>
                 </div>

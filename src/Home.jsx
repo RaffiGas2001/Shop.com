@@ -8,7 +8,7 @@ function Home() {
     const [bag, setBag] = useState([])
     const [quantity, setQuantity] = useState(0)
     const [value, setValue] = useState("")
-    const [ local, setLocal ] = useState()
+    const [local, setLocal] = useState()
 
     return (
         <div>

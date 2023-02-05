@@ -34,7 +34,7 @@ function Buy({bag, setBag, quantity, setQuantity, local, setLocal}) {
             :
             bag.map((prod, index) => {
                 return (
-                    <OneItem prod={prod} handleRemove={handleRemove} index={index} bag={bag}/>
+                    <OneItem prod={prod} handleRemove={handleRemove} index={index} bag={bag} setBag={setBag} quantity={quantity} setQuantity={setQuantity}/>
                 )
             })}
         </div>

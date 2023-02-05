@@ -65,7 +65,7 @@
     cursor: pointer;
 }
 
-.remove{
+.buy-remove{
     width: 100px;
     display: flex;
     justify-content: center;
@@ -73,9 +73,10 @@
     /* border: 1px solid black; */
 }
 
-.remove button{
+.buy-remove button{
     background: red;
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: 10px;
 }
